@@ -1,0 +1,56 @@
+.slide-container {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+}
+.slider .slider-cell img {
+  width: 100%;
+  vertical-align: middle;
+}
+/*************** ボタン ***************/
+.slick-dots {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+}
+.slick-dots button {
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin: 0 7px;
+  background-color: #efefef;
+  border: 1px solid #666;
+  box-shadow: 0 1px 1px #666;
+}
+/*************** 矢印 ***************/
+#arrows .prev-arrow,
+#arrows .next-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 34px;
+  font-size: 2rem;
+}
+#arrows .prev-arrow {
+  left: 20%;
+}
+#arrows .next-arrow {
+  right: 20%;
+}
+/*************** レスポンシブ ***************/
+@media screen and (max-width: 960px) {
+  .slide-container {
+    width: 90%;
+  }
+  #arrows .prev-arrow,
+  #arrows .next-arrow {
+    bottom: 24px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slide-container {
+    width: 95%;
+  }
+  #arrows {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  --width-pc: calc(860px + 10vw);
+  --width-tb: 80%;
+  --width-sp: 92%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+button {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+.wrapper {
+  width: var(--width-pc);
+  padding: 5% 0 0 0;
+  margin: 0 auto 15px;
+  outline: 1px solid gray;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: var(--width-tb);
+  }
+}
+@media screen and (max-width: 750px) {
+  .wrapper {
+    width: var(--width-sp);
+  }
+}

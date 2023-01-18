@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slick</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+    <link rel="stylesheet" href="./css/vanilla-js.css" />
+    <!-- jquery-3.6.3 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- jquery slick.js -->
+    <h1 style="text-align: center; margin: 5% 0;">
+      SLIDER SCRIPT
+    </h1>
+    <div class="wrapper">
+      <h2 style="text-align: center; font-size: 1.5rem">
+        jquery slick.js slider
+      </h2>
+      <div class="slide-container">
+        <div class="slider"></div>
+        <div id="arrows"></div>
+      </div>
+    </div>
+
+    <!-- vanilla.js -->
+    <div class="wrapper">
+      <h2 style="text-align: center; font-size: 1.5rem">vanilla.js slider</h2>
+      <div id="vanillaSlideContainer" class="slide-container">
+        <ul id="vanillaSlider" class="vanilla-slider"></ul>
+        <ul id="btnArea" class="vanilla-dots"></ul>
+        <div id="vanillaArrows">
+          <button id="prev" class="slide-arrow prev-arrow">&laquo;</button>
+          <button id="next" class="slide-arrow next-arrow">&raquo;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- slickスライダー -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <!-- script 読み込み -->
+    <script type="module" src="js/query.js"></script>
+    <script type="module" src="js/vanilla.js"></script>
+  </body>
+</html>
