@@ -27,7 +27,7 @@
 #arrows .next-arrow {
   display: inline-block;
   position: absolute;
-  bottom: 34px;
+  bottom: -5px;
   font-size: 2rem;
 }
 #arrows .prev-arrow {
@@ -40,10 +40,6 @@
 @media screen and (max-width: 960px) {
   .slide-container {
     width: 90%;
-  }
-  #arrows .prev-arrow,
-  #arrows .next-arrow {
-    bottom: 24px;
   }
 }
 @media screen and (max-width: 750px) {
